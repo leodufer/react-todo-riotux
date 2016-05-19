@@ -1,0 +1,68 @@
+body {
+  background-color: #222;
+  color: #00D8F1;
+}
+
+li {
+  list-style: none;
+  font-size: 3rem;
+  cursor: pointer;
+  -webkit-transition: all .25s ease-out .5s;
+  -moz-transition: all .25s ease-out .5s;
+  transition: all .25s ease-out .5s;
+}
+li:hover {
+  text-decoration: line-through;
+}
+
+.six.columns {
+    width: 50%;
+    margin: 0;
+}
+
+.full {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.gray {
+  background-color: #eee;
+}
+.title {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.todo-value {
+  width: 50%;
+  font-size: 2rem;
+  padding: 2.7rem !important;
+  color: #333;
+}
+
+.add-todo {
+  display: block;
+  width: 40%;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 100;
+  align-self: center;
+}
+
+/* Larger than phablet */
+@media (max-width: 768px) {
+  .full {
+    height: 50vh;
+  }
+  .six.columns {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 4rem;
+  }
+}
